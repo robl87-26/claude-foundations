@@ -18,5 +18,9 @@
 
 ## Defaults
 - OS: Omarchy (DHH's Arch-based distro, Hyprland on Wayland), bash. Install packages with `pacman`/`yay`; use Wayland tools (`wl-copy`, not `xclip`). Before editing system or desktop config, check how Omarchy manages it so updates don't overwrite the change.
-- Stack: HTML, CSS, TypeScript (plain JavaScript only when the project already uses it).
+- Frontend: HTML First. Native HTML elements, attributes, and CSS come before JS, and before any package; add a dependency only when HTML, CSS, or a few lines of code can't do the job (`<dialog>` over a modal library, `<details>` over an accordion, native form validation, CSS transitions over animation libraries).
+- Designs (e.g. Claude Design exports) are the spec: match layout, spacing, colour, type, and states exactly, and flag anything you can't reproduce instead of approximating it.
+- React projects, including design exports: keep React + TypeScript and apply HTML First inside the JSX.
+- Other frontends: no build step, view-source friendly; attribute-driven libraries (htmx, Alpine) before custom JS; browser JS typed with JSDoc and checked by `tsc --checkJs`.
+- Server, Node, and tooling code: TypeScript.
 - Commits: Conventional Commits (`feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`), imperative subject under 72 chars.
