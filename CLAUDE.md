@@ -18,5 +18,5 @@
 
 ## Defaults
 - OS: Omarchy (DHH's Arch-based distro, Hyprland on Wayland), bash. Install packages with `pacman`/`yay`; use Wayland tools (`wl-copy`, not `xclip`). Before editing system or desktop config, check how Omarchy manages it so updates don't overwrite the change.
-- Stack: HTML, CSS, JavaScript/TypeScript, unless the project already uses something else.
+- Stack: HTML, CSS, TypeScript (plain JavaScript only when the project already uses it).
 - Commits: Conventional Commits (`feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`), imperative subject under 72 chars.
