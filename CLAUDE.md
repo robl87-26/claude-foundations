@@ -17,6 +17,6 @@
 - Run the narrowest check that proves the change: one test file or test name rather than the full suite, quiet/summary output flags, long output piped through `tail` or `grep`.
 
 ## Defaults
-- Linux, bash.
+- OS: Omarchy (DHH's Arch-based distro, Hyprland on Wayland), bash. Install packages with `pacman`/`yay`; use Wayland tools (`wl-copy`, not `xclip`). Before editing system or desktop config, check how Omarchy manages it so updates don't overwrite the change.
 - Stack: HTML, CSS, JavaScript/TypeScript, unless the project already uses something else.
 - Commits: Conventional Commits (`feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`), imperative subject under 72 chars.
