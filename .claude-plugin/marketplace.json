@@ -1,0 +1,12 @@
+{
+  "name": "claude-foundations",
+  "owner": { "name": "Robert John Lark" },
+  "description": "Personal Claude Code plugins",
+  "plugins": [
+    {
+      "name": "usage-band",
+      "source": "./plugins/usage-band",
+      "description": "Live context-window and rate-limit usage above the prompt"
+    }
+  ]
+}
